@@ -1,0 +1,21 @@
+intext:''The Winner in the Category of OSS Indonesia ICT Award 2009''
+inurl:''index.php?p=show_detail&id='' site:id
+inurl:''/slims5-meranti/'' site:id
+intext:This software and this template are released Under GNU GPL License Version 3. The Winner in the Category of OSS Indonesia ICT Award 2009''
+Powered by SLiMS site:id
+Powered by SLiMS | Design by Indra Sutriadi Pipii
+Beranda Depan · Info Perpustakaan · Area Anggota · Pustakawan · Bantuan Pencarian · MASUK Pustakawan. 
+Akses Katalog Publik Daring - Gunakan fasilitas pencarian untuk mempercepat penemuan data katalog.
+SLiMS (Senayan Library Management System) is an open source Library Management System.
+It is build on Open source technology like PHP and MySQL. 
+PERPUSTAKAAN - Web Online Public Access Catalog - Use the search options to find documents quickly
+This software and this template are released Under GNU GPL License Version 3
+inurl:''/index.php?select_lang='' site:sch.id
+Web Online Public Access Catalog - Gunakan fasilitas pencarian untuk mempercepat anda menemukan data katalog
+Welcome To Senayan Library's Online Public Access Catalog (OPAC). Use OPAC to search collection in our library.
+O.P.A.C. (On-line Public Access Catalogue)
+inurl:''/perpustakaan/repository/'' site:id
+Senayan | Open Source Library Management System :: OPAC
+
+Exploit?
+http://localhost/admin/modules/bibliography/pop_attach.php
