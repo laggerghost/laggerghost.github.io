@@ -1,0 +1,26 @@
+Faveo Helpdesk with Laravel File Manager
+
+#Author 	  : L4663r666h05t
+#Date		    : 09-06-2019
+#Tested 	  : Windows x64 Pro
+#reference	: https://khunerable.github.io/faveo.txt
+#Big thx to : Khunerable - KID2ZON3 - Typical Idiot Security - Indonesian Code Party
+
+Dork:
+intext:"by Faveo" "Submit a Ticket"
+
+POC:
+[+] register
+[+] check your email & click activation
+[+] login
+[+] do 
+		urwebsite.com/laravel-filemanager
+		urwebsite.com/path/laravel-filemanager
+    
+[+] upload ur pic ( real picture dont use backdoor extension jpg )
+[+] change jpg to php with burpsuite.
+[+] if done, right click picture. you got a shell.
+
+thanks
+regards
+L4663r666h05t, Indonesian Code Party
