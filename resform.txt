@@ -1,0 +1,18 @@
+Responsive FileMan plugins in Phpformbuilder
+Author: L4663r666h05t
+Vendor Homepage: https://www.responsivefilemanager.com/
+Date: 09-06-2019
+Tested: Windows x64 pro
+
+dork? use your brain, hhh
+path shell: 
+site.com/files/shell.txt
+site.com/path/files/shell.txt
+site.com/phpformbuilder/plugins/filemanager/files/shell.txt
+
+POC:
+[+] goto /phpformbuilder/plugins/filemanager/dialog.php
+[+] upload shell with bypass extension (.php.fla, .php.accdb, .php.gif, etc.)
+[+] right click file, show url. u got shell or u can upload deface script.
+
+thx to: Indonesian Code Party
