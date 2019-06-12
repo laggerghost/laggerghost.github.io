@@ -1,0 +1,19 @@
+WordPress Satoshi Themes 2.0 Perl Bot
+usage? type list sites & your shell name or deface script
+Thanks to: KingSkrupellos
+
+Dork?
+intext:Design By Voosh Themes
+intext:Design By TecnoGe Informatica
+inurl:/wp-content/themes/satoshi/
+
+Infected file: upload-file.php
+Allowed file: txt & jpg
+Path your file: http://victim/wp-content/themes/satoshi/images/yourfile.txt
+
+Bot: https://pastebin.com/raw/SwQM4GKF
+
+Demo? use your fucking brain sh1t~!
+Reg4rd, L4663r666h05t - Indonesian Code Party
+Reference:
+https://cxsecurity.com/ascii/WLB-2019060040
