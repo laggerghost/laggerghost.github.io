@@ -1,0 +1,44 @@
+###########################################
+# Exploit Title: TinyFileManager Admin Weak Password Vulnerability
+# Author: L466r666h05t x Indonesian Code Party
+# Vendor: https://github.com/prasathmani/tinyfilemanager/blob/master/tinyfilemanager.php
+# Dork:
+# inurl:tinyfilemanager.php
+# inurl:translation.json
+
+###########################################
+Demo? use your f*cking brain bro!
+Login Page:
+http://localhost/tinyfilemanager.php
+http://localhost/path/tinyfilemanager.php
+
+File: tinyfilemanager.php
+a part of tinyfilemanager.php
+----------------------------------------------------------------------
+// Auth with login/password (set true/false to enable/disable it)
+$use_auth = true;
+
+// Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
+// Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
+$auth_users = array(
+    'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW', //admin@123
+    'user' => '$2y$10$Fg6Dz8oH9fPoZ2jJan5tZuv6Z4Kp7avtQ9bDfrdRntXtPeiMAZyGO' //12345
+);
+
+// Readonly users (username array)
+$readonly_users = array(
+    'user'
+);
+----------------------------------------------------------------------
+So the username is admin & password is admin@123 to login as Admin
+and to be normal user. you can use user and the password is 12345
+----------------------------------------------------------------------
+
+Impact:
+An Attacker can login the filemanager and upload a backdoor
+
+----------------------------------------------------------------------
+
+Shell Path: [Recommed Use Mini Shell]
+http://localhost/shell.php
+###########################################
