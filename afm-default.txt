@@ -1,0 +1,40 @@
+#############################################################
+# Exploit Title: Ajax File Manager Login Form Weak Password
+# Author: L4663r666h05t x Indonesian Code Party
+# Vendor: https://tinymceplugins.com/plugins/ajax-file-image-manager
+# Date: 20 Juny 2019
+# Level: Low Risk
+#############################################################
+
+Impact:
+An attacker can log in with default password
+
+Config:
+http://localhost/path/ajaxfilemanager/inc/config.base.php
+
+NOTE: [PLEASE READ]
+Rarely do administrators of the site leave their username and password default. 
+But still there is. This is only an estimate, it could be one time you find this bug. 
+I think, this is not a bug, in my opinion this includes human error, because of the error of the website administrator.
+
+Some part of config.base.php
+-------------------------------------------------------------
+	//Access Control Setting
+	/**
+	 * turn off => false
+	 * by session => true
+	 */
+	define('CONFIG_ACCESS_CONTROL_MODE', false); 	
+	define("CONFIG_LOGIN_USERNAME", 'ajax');
+	define('CONFIG_LOGIN_PASSWORD', '123456');
+	define('CONFIG_LOGIN_PAGE', 'ajax_login.php'); //the url to the login page
+-------------------------------------------------------------
+Username: ajax | Password: 123456
+-------------------------------------------------------------
+
+Login Form: 
+http://localhost/path/ajaxfilemanager/ajax_login.php
+-------------------------------------------------------------
+Demo? use your fvcking brain.
+
+Thx to: Mr.Vendetta404 - Indonesian Code Party
